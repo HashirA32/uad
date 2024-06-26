@@ -1,0 +1,147 @@
+.Nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to top, #81b9188a 0%, #81b918a2 100%),  url(/src/images/Nav\ image.jpg) ;  
+}
+
+.hero {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, #D4D70077 0%, #AACC0055 50%, #81b9188a 100%),  url(/src/images/Background\ image.jpg) ;  
+  background-size: cover;
+  height: 90dvh;
+  width: auto; 
+  z-index: -11111;
+}
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #0c3d1c;
+}
+
+.logo {
+  margin-top: 0.5rem;
+  height: 11dvh;
+  width: 5dvw;
+  background-size: cover;
+  background-image: url(/src/images/UAD_Logo.png);
+  border-radius: 50%;
+}
+
+.name {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  top: 44dvh;
+  margin-left: 5dvw;
+  padding: 1.5rem;
+  font-weight: 600;
+  font-size: 3.5rem;
+  background: linear-gradient(to right, #0b3223ef, #0b3223a6, #045e3be3 );
+  border-radius: 5px ;
+  color: rgba(163, 255, 163, 0.753);
+}
+
+.hero-text {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  top: 20dvh;
+  left: -0.8rem;
+  padding: 0.9rem;
+  font-size: 2.5rem;
+  border-radius: 1rem;
+  color: #5bb34f;
+  background: linear-gradient(to right, #0b3223ef, #0b3223a6, #045e3be3 );
+}
+
+.hero-text-Link {
+  font-size: 2.5rem;
+  color: rgba(163, 255, 163, 0.753);
+}
+
+
+/* Card section */
+
+
+.card {
+  position: relative;
+  background-size: cover;
+  width: 300px;
+  height: 200px;
+  background-color: #0d272b;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+}
+
+.cards-Contianer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+  background-color: #0d272b;
+  
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(233, 233, 233);
+}
+
+.card:hover svg {
+  scale: 0;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #7ead92;
+  line-height: 1.4;
+}
