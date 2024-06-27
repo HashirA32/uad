@@ -1,12 +1,21 @@
 body {
   margin: 0;
-  
+  background: linear-gradient(to top, rgb(15, 75, 50), rgb(7, 112, 30), rgb(13, 184, 13)  );
+  background-color: rgb(13, 184, 13);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+::-webkit-scrollbar {
+  background-color: #021b16;
+  border-radius: 5px;
+  width: 0.7rem;
+}
 
-
+::-webkit-scrollbar-thumb {
+  background-color: #027525;
+  border-radius: 5px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

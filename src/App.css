@@ -1,8 +1,10 @@
 .Nav {
+  margin: 0px;
+  padding: 0px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(to top, #81b9188a 0%, #81b918a2 100%),  url(/src/images/Nav\ image.jpg) ;  
+  background: linear-gradient(to top, #81b91886 0%, #81b918a2 100%),  url(/src/images/Nav\ image.jpg) ;  
 }
 
 .hero {
@@ -11,11 +13,13 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to top, #D4D70077 0%, #AACC0055 50%, #81b9188a 100%),  url(/src/images/Background\ image.jpg) ;  
+  background: linear-gradient(to top, #D4D70077 0%, #AACC0055 50%, #81b9188c 100%),  url(/src/images/Background\ image.jpg) ;  
   background-size: cover;
   height: 90dvh;
   width: auto; 
   z-index: -11111;
+  margin: 0px;
+  padding: 0px;
 }
 a {
   text-decoration: none;
@@ -41,12 +45,14 @@ a {
   width: fit-content;
   top: 44dvh;
   margin-left: 5dvw;
+  margin-bottom: 0rem;
   padding: 1.5rem;
   font-weight: 600;
   font-size: 3.5rem;
   background: linear-gradient(to right, #0b3223ef, #0b3223a6, #045e3be3 );
   border-radius: 5px ;
   color: rgba(163, 255, 163, 0.753);
+  
 }
 
 .hero-text {
@@ -60,11 +66,15 @@ a {
   border-radius: 1rem;
   color: #5bb34f;
   background: linear-gradient(to right, #0b3223ef, #0b3223a6, #045e3be3 );
+  margin: 0px;
+ 
 }
 
 .hero-text-Link {
   font-size: 2.5rem;
   color: rgba(163, 255, 163, 0.753);
+  margin: 0px;
+  padding: 0px;
 }
 
 
@@ -74,8 +84,8 @@ a {
 .card {
   position: relative;
   background-size: cover;
-  width: 300px;
-  height: 200px;
+  width: 350px;
+  height: 230px;
   background-color: #0d272b;
   border-radius: 10px;
   display: flex;
@@ -83,9 +93,13 @@ a {
   justify-content: center;
   overflow: hidden;
   perspective: 1000px;
-  box-shadow: 0 0 0 5px #ffffff80;
+  box-shadow: 0 0 0 5px #3a3a3a2c;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  
+  margin: 0px;
+  padding: 0px;
+
+  aspect-ratio: 2/2;
+  object-fit: contain;  
 }
 
 .cards-Contianer {
@@ -94,18 +108,43 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+  margin: 0px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  scroll-snap-type: y mandatory;
+  overflow: auto;
+  height: 35dvh;
+  width: 90dvw;
+  background-color: rgba(0, 0, 0, 0);
 }
+
+
+
+.cards-Contianer::-webkit-scrollbar {
+  background-color: #021809;
+  border-radius: 5px;
+  width: 0.7rem;
+}
+
+.cards-Contianer::-webkit-scrollbar-thumb {
+  background-color: #9cbda6;
+  border-radius: 5px;
+}
+
+
 
 .card svg {
   width: 48px;
   fill: #333;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin: 0px;
+  padding: 0px;
   
 }
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 16px rgba(240, 240, 240, 0.2);
 }
 
 .card__content {
@@ -120,6 +159,8 @@ a {
   transform: rotateX(-90deg);
   transform-origin: bottom;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin: 0px;
+  padding: 0px;
 }
 
 .card:hover .card__content {
@@ -130,9 +171,11 @@ a {
 
 .card__title {
   margin: 0;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
   color: rgb(233, 233, 233);
+  text-align: center;
+  padding-top: 1rem;
 }
 
 .card:hover svg {
@@ -144,4 +187,42 @@ a {
   font-size: 14px;
   color: #7ead92;
   line-height: 1.4;
+  text-align: center;
+  padding-top: 2rem;
+  padding: 1rem;
+  
+}
+
+.ACADEMIC {
+  background-color: #33333300;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 5dvw;
+  height: 85dvh;
+  
+  
+}
+
+.Academic-Heading {
+  margin-top: 2rem;
+  color: #062b20;
+  font-weight: 600;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 3rem;
+  background: linear-gradient(to right,  #4e9ce67c 0%,#a3c4e27c 40%, #0d2b1900 100% );
+  width: fit-content;
+  
+  
+}
+
+.Academic-text {
+  height: 5dvh;
+  width: 50dvw;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #b8cfe67c;
+  padding-left: 1rem;
+  
 }
