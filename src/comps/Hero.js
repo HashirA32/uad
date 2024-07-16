@@ -8,8 +8,8 @@ const Hero = () => {
        Join the <a className='hero-text-Link' href='/'><b>UAD</b></a> Community, where passion ignites purpose.
        </div>
        <div className="name">
-       <a className='hero-text-Link' href='/'>University <br/> of Agriculture Dera Ismail Khan</a>
-       </div>
+       <a className='hero-text-Link' href='/'>University of  Agriculture<br/>Dera Ismail Khan </a>
+       </div> 
       </div>
     </>
   )

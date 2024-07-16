@@ -4,6 +4,8 @@ import React from 'react'
 const Acadamic = () => {
   return (
     <>
+    <div className='ACADEMICMain'>
+
      <div className='ACADEMIC'>
         <p className='Academic-Heading'>ACADEMIC PROGRAMS</p>
         <p className='Academic-text'>EXPLORE UNIVERSITY’S 10+ COURSES ACROSS VARIOUS SPECIALIZATIONS THAT PROMOTE INTELLECTUAL AND INTUITIVE LEARNING AMONG STUDENTS.</p>
@@ -100,7 +102,7 @@ const Acadamic = () => {
 
         </div>
       </div> 
-      
+      </div>    
     </>
   )
 }
