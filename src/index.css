@@ -1,9 +1,10 @@
-body {
+  body {
   margin: 0;
   background: linear-gradient(to top, rgb(15, 75, 50), rgb(7, 112, 30), rgb(13, 184, 13)  );
   background-color: rgb(13, 184, 13);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 ::-webkit-scrollbar {

@@ -15,7 +15,7 @@ const Faculty = () => {
 
       <div className='FacultyD1'>
         <div className='FacultyImage'>
-          <img  className='FacultyImage1' src="./images/CS.jpg" alt="image" />
+          <img  className='FacultyImage1' src="./images/CS.jpg" alt="img" />
         </div>
         <div className='FacultyDetails'>
           <p className="Faculty__title">Faculty of <br/> Computer Science</p>
@@ -30,7 +30,7 @@ const Faculty = () => {
           <p className="Faculty__description">Explore BS in Agriculture at Agriculture University of Dera Ismail Khan (UAD). Gain expertise in agricultural sciences and sustainable farming, with modern facilities and experienced faculty.</p>
         </div>
         <div className='FacultyImage'>
-          <img  className='FacultyImage1' src="./images/AG1.png" alt="image" />
+          <img  className='FacultyImage1' src="./images/AG1.png" alt="img" />
         </div>
       </div>
       
