@@ -3,7 +3,7 @@
   padding: 0px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background: linear-gradient(to top, #81b91886 0%, #81b918a2 100%),  url(/src/images/Nav\ image.jpg) ;  
 }
 
@@ -810,3 +810,274 @@ h1 {
       width: 49.99%;
   } */
 }
+
+
+
+
+
+
+                                         /*Pages CSS*/
+
+
+
+
+
+
+/* About Section */
+
+
+.About {
+  background: linear-gradient(to top, #ccff3356 0%, #ccff33d2 50%, #ccff33a2 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.AboutHeading {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 2rem;
+  color: #0c3d1c;
+  
+}
+
+.AboutDiscription {
+  font-size: 1rem;
+  height: 50dvh;
+  width: 60dvw;
+  line-height: 1.5rem;
+  
+  text-align: center;
+  padding: 2rem;
+}
+
+
+
+/* Admmision Form */
+
+.FormMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem;
+  height: 80dvh;
+  width: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: fit-content;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #2e26262c;
+  color: #fff;
+  border: 1px solid #333;
+  height: 80dvh;
+  width: 700px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  color: #91ff00;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #91ff00;
+}
+
+.message, 
+.signin {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a:hover {
+  text-decoration: underline rgb(65, 225, 92);
+}
+
+.signin a {
+  color: rgb(65, 225, 92);
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  background-color: #33333315;
+  color: #fff;
+  
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+  width: fit-content
+}
+
+.form label .input + span {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.8rem;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+  color: rgb(65, 225, 92);
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.select1 {
+  position: relative;
+  background-color: #33333315;
+  color: rgb(65, 225, 92);
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+  width: fit-content
+}
+
+
+.select1 option  {
+  background-color: #10421c;
+  border-radius: 5px;
+  color: rgb(65, 225, 92);
+  padding: 20px 05px 05px 10px;
+  outline: 0;
+  border: 1px solid rgba(63, 119, 72, 0.397);
+  border-radius: 10px;
+  width: fit-content;
+}
+
+
+.input {
+  font-size: 1rem;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  background-color: rgb(52, 172, 72);
+}
+
+.submit:hover {
+  background-color: rgb(50, 211, 77);
+  box-shadow: 0px 0px 5px #034203;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.Placeholder {
+  font-size: 0.8rem;
+  color: rgb(65, 225, 92);
+  padding: 0rem;
+  margin: 0rem;
+}
+
+
+
+
+/* Contact section */
+
+
+
+.LinkMain  {
+ display: flex;
+ align-items: start;
+ justify-content: space-around;
+}
+
+
+.links {
+  height: fit-content; 
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  padding-top: 5rem;
+  
+}
+
+.link {
+  margin: 0px;
+  padding: 0px;
+}
+
+.Map {
+  padding-top: 5rem;
+}
+.LinkHeading{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #070313;
+  margin: 2rem;
+  margin-right: 5rem;
+  
+}
+
