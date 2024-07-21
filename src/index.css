@@ -1,6 +1,6 @@
   body {
   margin: 0;
-  background: linear-gradient(to top, rgb(15, 75, 50), rgb(7, 112, 30), rgb(13, 184, 13)  );
+  background: linear-gradient(to top, rgb(15, 75, 50), rgb(7, 112, 30), #103b1d  );
   background-color: rgb(13, 184, 13);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -21,3 +21,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
