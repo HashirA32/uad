@@ -5,8 +5,8 @@ const Admission = () => {
     <>
       <div className='FormMain'>
         <form className="form">
-          <p className="title">Register </p>
-          <p className="message">Signup now and get full access to our app. </p>
+          <p className="title"> </p>
+          <p className="message">Please fill all the boxs. </p>
             <div className="flex">
                 <label>
                     <input className="input" type="text" placeholder="" required=""/>

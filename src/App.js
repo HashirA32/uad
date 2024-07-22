@@ -1,32 +1,64 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { Suspense, lazy } from "react";
+
 import Navbar from './comps/Navbar';
 import './App.css';
 import './index.css';
-// import Hero from './comps/Hero';
-// import Acadamic from './comps/Acadamic';
-// import Faculty from './comps/Faculty';
-// import Feedback from './comps/Feedback';
-// import Events from './comps/Events';
 import Footer from './comps/Footer';
-// import Admission from './pages/Admission';
-// import About from './pages/About';
-import Contact from './pages/Contact';
-function App() {
+
+const Hero = lazy(() => import('./comps/Hero'));
+const Acadamic = lazy(() => import('./comps/Acadamic'));
+const Faculty = lazy(() => import('./comps/Faculty'));
+const Events = lazy(() => import('./comps/Events'));
+const Feedback = lazy(() => import('./comps/Feedback'));
+
+const About = lazy(() => import('./pages/About'));
+const Admission = lazy(() => import('./pages/Admission'));
+const Faculties = lazy(() => import('./pages/Faculties'));
+const Scholerships = lazy(() => import('./pages/Scholerships'));
+const Links = lazy(() => import('./pages/Links'));
+const Contact = lazy(() => import('./pages/Contact'));
+
+function HomePageComponents() {
   return (
     <>
-    <Navbar/>
-   <Contact/>
-
-
-
-    {/* <Hero/>
-    <Acadamic/>
-    <Faculty/>
-    <Feedback/>
-    <Events/> */}
-    <Footer/>
-
-    </> 
+      <Hero />
+      <Acadamic />
+      <Faculty />
+      <Events />
+      <Feedback />
+    </>
   );
 }
 
-export default App;
+function App() {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+
+  return (
+    <>
+      <Navbar />
+      <Suspense fallback={<div>Loading data...</div>}>
+        <Routes>
+          <Route path="/" element={<HomePageComponents />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/admission" element={<Admission />} />
+          <Route path="/faculties" element={<Faculties />} />
+          <Route path="/Scholerships" element={<Scholerships />} />
+          <Route path="/links" element={<Links />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Suspense>
+      <Footer />
+    </>
+  );
+}
+
+export default function AppWrapper() {
+  return (
+    <Router>
+      <App />
+    </Router>
+  );
+}

@@ -1,11 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
     <>
       <div className="hero">
+      
       <div className="hero-text">
-       Join the <a className='hero-text-Link' href='/'><b>UAD</b></a> Community, where passion ignites purpose.
+       Join the <Link to="/" className='hero-text-Link' >UAD</Link> Community, where passion ignites purpose.
        </div>
        <div className="name">
        <a className='hero-text-Link' href='/'>University of  Agriculture<br/>Dera Ismail Khan </a>
