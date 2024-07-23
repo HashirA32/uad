@@ -1,5 +1,5 @@
   body {
-  margin: 0;
+  margin: 0px;
   background: linear-gradient(to top, rgb(15, 75, 50), rgb(7, 112, 30), #103b1d  );
   background-color: rgb(13, 184, 13);
   -webkit-font-smoothing: antialiased;
@@ -16,9 +16,5 @@
 ::-webkit-scrollbar-thumb {
   background-color: #027525;
   border-radius: 5px;
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 

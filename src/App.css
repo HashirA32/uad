@@ -1,5 +1,6 @@
+/* Base Styles */
+
 .Nav {
-  
   margin: 0;
   padding: 0;
   display: flex;
@@ -7,7 +8,6 @@
   justify-content: space-around;
   background-color: #008f2d;
   background: linear-gradient(to right, #58ad57da 0%, #81b9188c 30%, #81b9188c 100%), url('/images/Background.jpg');
-  background-size: cover;
   background-repeat: no-repeat;
   height: 11vh;
   width: auto;
@@ -22,7 +22,7 @@
   background: linear-gradient(to top, #D4D70077 0%, #AACC0055 50%, #81b9188c 100%), url('/images/Background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 89vh; 
+  height: 89vh;
   width: 100%;
   z-index: -11;
   margin: 0;
@@ -39,13 +39,11 @@ a {
 }
 
 .logo {
-  
   margin-top: 0.1rem;
-  height: 11dvh;
+  height: auto;
   width: 5dvw;
   background-size: contain;
   border-radius: 50%;
-  
 }
 
 img {
@@ -58,15 +56,13 @@ img {
   height: fit-content;
   width: fit-content;
   margin-left: 5dvw;
-  margin-top: 47dvh;
+  margin-top: 40dvh;
   padding: 1.5rem;
   font-weight: 600;
   font-size: 3.5rem;
-  background: linear-gradient(to right, #0b3223ef, #0b3223a6, #045e3be3 );
-  border-radius: 5px ;
+  background: linear-gradient(to right, #0b3223ef, #0b3223a6, #045e3be3);
+  border-radius: 5px;
   color: rgba(163, 255, 163, 0.753);
- 
-  
 }
 
 .hero-text {
@@ -76,12 +72,12 @@ img {
   top: 20dvh;
   left: -0.8rem;
   padding: 0.9rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   border-radius: 1rem;
   color: #5bb34f;
-  background: linear-gradient(to right, #0b3223e5, #0b3223a6, #045e3cb2 );
+  background: linear-gradient(to right, #0b3223e5, #0b3223a6, #045e3cb2);
   margin: 0px;
- 
+  z-index: -111;
 }
 
 .hero-text-Link {
@@ -91,15 +87,13 @@ img {
   padding: 0px;
 }
 
-
 /* Card section */
-
 
 .card {
   position: relative;
   background-size: cover;
-  width: 350px;
-  height: 230px;
+  width: 21rem;
+  height: 14rem;
   background-color: #f8f8f813;
   border-radius: 10px;
   display: flex;
@@ -111,9 +105,8 @@ img {
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   margin: 0px;
   padding: 0px;
-
   aspect-ratio: 2/2;
-  object-fit: contain;  
+  object-fit: contain;
 }
 
 .cards-Contianer {
@@ -132,8 +125,6 @@ img {
   background-color: rgba(0, 0, 0, 0);
 }
 
-
-
 .cards-Contianer::-webkit-scrollbar {
   background-color: #021809;
   border-radius: 5px;
@@ -145,15 +136,12 @@ img {
   border-radius: 5px;
 }
 
-
-
 .card svg {
   width: 48px;
   fill: #333;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   margin: 0px;
   padding: 0px;
-  
 }
 
 .card:hover {
@@ -180,7 +168,6 @@ img {
 .card:hover .card__content {
   transform: rotateX(0deg);
   background-color: #0d272b;
-  
 }
 
 .card__title {
@@ -204,25 +191,21 @@ img {
   text-align: center;
   padding-top: 2rem;
   padding: 1rem;
-  
 }
 
-
-
 .ACADEMICMain {
-  
   margin: 0px;
   padding: 0px;
   height: 100dvh;
   width: auto;
   background-color: #21742f;
 }
+
 .ACADEMIC {
   margin: 0px;
   padding: 0px;
   margin-left: 5dvw;
   padding-top: 1rem;
-
 }
 
 .Academic-Heading {
@@ -232,10 +215,8 @@ img {
   border-radius: 1rem;
   padding: 1rem;
   font-size: 3rem;
-  background: linear-gradient(to right,  #4e9ce67c 0%,#a3c4e27c 40%, #0d2b1900 100% );
+  background: linear-gradient(to right, #4e9ce67c 0%, #a3c4e27c 40%, #0d2b1900 100%);
   width: fit-content;
-  
-  
 }
 
 .Academic-text {
@@ -246,75 +227,68 @@ img {
   font-weight: 600;
   color: #b8cfe67c;
   padding-left: 1rem;
-  
 }
 
-
-
 /* Faculty Section */
-
 
 .Faculty {
   height: 180dvh;
   width: auto;
   background-color: #0f6424d7;
 }
+
 .FacultyHeading {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   color: rgb(11, 20, 12);
-  
 }
 
 .FacultyMainLine {
   position: relative;
   font-size: 3rem;
   font-weight: 600;
-  padding-right:5rem;
+  padding-right: 5rem;
 }
-
 
 .FacultyMainHeading {
   font-size: 1rem;
   font-weight: 600;
 }
+
 .FacultyD1 {
   display: flex;
   align-items: center;
-  justify-content:stretch;
+  justify-content: stretch;
   width: 90dvw;
   margin: 0rem;
   padding: 0rem;
- 
 }
 
 .FacultyD2 {
   display: flex;
   align-items: center;
-  justify-content:stretch;
+  justify-content: stretch;
   width: 90dvw;
   margin-top: 2rem;
   padding-left: 5rem;
 }
 
 .FacultyImage {
-  height: 55dvh; 
+  height: 55dvh;
   padding: 1rem;
   padding-left: 5rem;
   padding-right: 4rem;
-  
-  
 }
 
 .FacultyImage1 {
-  height: 55dvh; 
+  height: 55dvh;
   background-size: cover;
   border-radius: 1rem;
 }
 
 .FacultyDetails {
   background-color: #cbe9d415;
-  height: 55dvh; 
+  height: 55dvh;
   width: 40dvw;
   text-align: center;
   display: flex;
@@ -345,7 +319,6 @@ img {
 
 /* Counter Section */
 
-
 .CounterMain {
   height: 50dvh;
   width: auto;
@@ -357,17 +330,14 @@ img {
 }
 
 .Counter {
-  
   display: inline-block;
   margin: 0 12dvw;
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
- 
 }
 
 /* Feedback section */
-
 
 .App {
   text-align: center;
@@ -418,9 +388,7 @@ img {
   text-align: right;
 }
 
-
 /* Events Section */
-
 
 .Event {
   height: 80dvh;
@@ -430,7 +398,7 @@ img {
   padding-right: 2rem;
   display: flex;
   align-items: center;
-  justify-content:flex-end;
+  justify-content: flex-end;
   flex-wrap: wrap;
   gap: 2rem;
   background-color: #103b1d;
@@ -472,21 +440,21 @@ img {
   -webkit-transition: all .8s ease;
   transition: all .8s ease;
   -webkit-filter: blur(.5rem);
-          filter: blur(.5rem);
+  filter: blur(.5rem);
 }
 
 .text {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   color: rgb(255, 255, 255);
   font-weight: 900;
   font-size: 1.1rem;
@@ -504,11 +472,8 @@ img {
   top: -30%;
   left: 50%;
   -webkit-filter: blur(0rem);
-          filter: blur(0rem);
+  filter: blur(0rem);
 }
-
-
-
 
 /* Footer Section */
 
@@ -518,9 +483,9 @@ h1 {
   filter: drop-shadow(5px 4px 0px rgb(0, 0, 0));
 }
 
-.pg-footer {
+/* .pg-footer {
   font-family: 'Roboto', sans-serif;
-}
+} */
 
 .footer {
   background-color: #132e1b;
@@ -550,11 +515,10 @@ h1 {
 }
 
 .footer-content-column {
-  box-sizing: border-box;
-  padding-left: 15px;
+ 
+  padding-left: 5rem;
   padding-right: 15px;
-  width: 100%;
-  color: #fff;
+  
 }
 
 .footer-content-column ul li a {
@@ -662,8 +626,6 @@ h1 {
   width: 236px;
 }
 
-
-
 .footer-social-amoeba-path {
   fill: #5bb34f;
 }
@@ -687,7 +649,6 @@ h1 {
   border: 0;
   top: 50%;
 }
-
 
 .footer-copyright {
   background-color: #5bb34f;
@@ -716,59 +677,424 @@ h1 {
   text-decoration: none;
 }
 
-@media (min-width:320px) and (max-width:479px)  { 
-  .footer-content {
-    padding-bottom: 60px;
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+  .Nav {
+    flex-direction: column;
+    height: 30dvh;
+  }
+  .logo {
+    height: fit-content;
+    width: 15dvw;
+  }
+  .hero {
+    height: 68dvh;
+    padding: 10px;
+    background-size: cover;
+  }
+
+  .name {
+    top: auto;
+    bottom: -25px;
+    padding: 0.5rem;
+   
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
+  }
+
+  .hero-text-Link {
+    font-size:  3rem;
+  }
+
+
+  .ACADEMIC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards-Contianer {
+    flex-direction: column;
+    height: 63dvh;
+    width: 60dvh;
+    padding: 0px;
+    
+    
+  }
+
+  .card {
+    width: 18rem;
+    height: 11.5rem;
+    background-color: transparent;
+  }
+  
+
+  .Faculty {
+    height: 60dvh;;
+   }
+   .FacultyD1{
+     height: 20dvh;
+     margin: 0px;
+     padding: 0px;
+     width: 95dvw;
+    
+   }
+ 
+   .FacultyD2 {
+     height: 20dvh;
+     margin: 0px;
+     padding: 1.5rem;
+     width: 95dvw;
+   }
+ 
+   .FacultyImage{
+     height: 20dvh;
+     width: 60dvw;
+   }
+ 
+   .FacultyImage1 {
+     padding-top: 3rem;
+     width: 60dvw;
+     height: 20dvh;
+   }
+   .FacultyDetails{
+     width: 50dvw;
+     height: 20dvh;
+     padding: 0px;
+   }
+ 
+   .Faculty__description{
+     width: 20dvh;
+     height: 20dvh;
+     padding: 0px;
+   }
+ 
+   .FacultyImage {
+     height: 30dvh;
+     width: 40dvh;
+     padding: 0.5rem;
+     padding-left: 1rem;
+     padding-right: 2rem;
+   }
+ 
+   .Faculty__title {
+     font-size: 1rem;
+     margin: 0px;
+   }
+
+
+  .ACADEMICMain,
+  .Faculty,
+  .CounterMain,
+  .App,
+  .Event,
+  .Scholership,
+  .Result {
+    height: auto;
+    padding: 20px;
+  }
+
+  .Academic-Heading,
+  .FacultyMainLine,
+  .Counter,
+  .Scholership-H,
+  .Result-H {
+    font-size: 2rem;
+  }
+
+  .Academic-text,
+  .Faculty__description,
+  .Counter,
+  .Scholership-D,
+  .Result-D {
+    font-size: 1rem;
   }
 }
 
-@media (min-width:480px) and (max-width:599px)  {
-  .footer-content {
-    padding-bottom: 60px;
+@media (max-width: 768px) {
+  .Nav {
+    flex-direction: column;
+  }
+
+  .logo {
+    height: fit-content;
+    width: 15dvw;
+  }
+  .hero {
+    height: auto;
+    padding: 10px;
+  }
+
+  .name {
+    font-size: 1.2rem;
+    top: auto;
+    margin-top: 4rem;
+    bottom: -10px;
+    padding: 0.5rem;
+  }
+
+  .hero-text {
+    font-size: 1.5rem;
+    top: 5vh;
+  
+  }
+
+  .hero-text-Link {
+    font-size: 1.6rem;
+  }
+
+
+  .ACADEMIC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cards-Contianer {
+    flex-direction: column;
+    height: 63dvh;
+    width: 30dvh;
+    padding: 0px;
+    
+    
+  }
+
+  .card {
+    width: 18rem;
+    height: 11.5rem;
+    background-color: transparent;
+  }
+  
+
+  .Faculty {
+    height: 60dvh;;
+   }
+   .FacultyD1{
+     height: 20dvh;
+     margin: 0px;
+     padding: 0px;
+     width: 95dvw;
+    
+   }
+ 
+   .FacultyD2 {
+     height: 20dvh;
+     margin: 0px;
+     padding: 1.5rem;
+     width: 95dvw;
+   }
+ 
+   .FacultyImage{
+     height: 20dvh;
+     width: 60dvw;
+   }
+ 
+   .FacultyImage1 {
+     padding-top: 3rem;
+     width: 60dvw;
+     height: 20dvh;
+   }
+   .FacultyDetails{
+     width: 50dvw;
+     height: 20dvh;
+     padding: 0px;
+   }
+ 
+   .Faculty__description{
+     width: 20dvh;
+     height: 20dvh;
+     padding: 0px;
+   }
+ 
+   .FacultyImage {
+     height: 30dvh;
+     width: 40dvh;
+     padding: 0.5rem;
+     padding-left: 1rem;
+     padding-right: 2rem;
+   }
+ 
+   .Faculty__title {
+     font-size: 1rem;
+     margin: 0px;
+   }
+
+   
+  .ACADEMICMain,
+  .Faculty,
+  .CounterMain,
+  .App,
+  .Event,
+  .Scholership,
+  .Result {
+    height: auto;
+    padding: 10px;
+  }
+
+  .Academic-Heading,
+  .FacultyMainLine,
+  .Counter,
+  .Scholership-H,
+  .Result-H {
+    font-size: 1.5rem;
+  }
+
+  .Academic-text,
+  .Faculty__description,
+  .Counter,
+  .Scholership-D,
+  .Result-D {
+    font-size: 0.8rem;
   }
 }
 
-@media (min-width:600px) and (max-width: 800px)  { 
-  .footer-content {
-    padding-bottom: 60px;
+@media (max-width: 480px) {
+  .Nav {
+    flex-direction: column;
+  
+  }
+
+  .logo {
+    height: fit-content;
+    width: 15dvw;
+  }
+  .hero {
+    height: auto;
+    padding: 5px;
+    font-size: 2rem;
+  }
+
+  .hero-text-Link {
+    font-size: 1.2rem;
+  }
+
+  .name {
+    font-size: 1.2rem;
+    top: auto;
+    margin-top: 4rem;
+    bottom: -5px;
+    padding: 0.5rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+    top: 2vh;
+    padding-left: 1rem;
+    padding-right: 0.2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    width: fit-content;
+  }
+
+  .cards-Contianer {
+    flex-direction: column;
+    height: 63dvh;
+    width: 90%;
+  }
+
+  .card {
+    width: 18rem;
+    height: 11.5rem;
+    background-color: transparent;
+  }
+  .ACADEMICMain,
+  .CounterMain,
+  .App,
+  .Event,
+  .Scholership,
+  .Result {
+    height: auto;
+    padding: 5px;
+  }
+  .Faculty {
+   height: 60dvh;;
+  }
+  .FacultyD1{
+    height: 20dvh;
+    margin: 0px;
+    padding: 0px;
+    width: 95dvw;
+   
+  }
+
+  .FacultyD2 {
+    height: 20dvh;
+    margin: 0px;
+    padding: 1.5rem;
+    width: 95dvw;
+  }
+
+  .FacultyImage{
+    height: 20dvh;
+    width: 60dvw;
+  }
+
+  .FacultyImage1 {
+    padding-top: 3rem;
+    width: 60dvw;
+    height: 20dvh;
+  }
+  .FacultyDetails{
+    width: 50dvw;
+    height: 20dvh;
+    padding: 0px;
+  }
+
+  .Faculty__description{
+    width: 20dvh;
+    height: 20dvh;
+    padding: 0px;
+  }
+
+  .FacultyImage {
+    height: 30dvh;
+    width: 40dvh;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
+
+  .Faculty__title {
+    font-size: 1rem;
+    margin: 0px;
+  }
+
+  .text {
+    font-size:0.9rem;
+}
+
+.feedback-container {
+  font-size: 0.6rem;
+    
+}
+
+.feedback-grid {
+  font-size: 1rem;padding-bottom: 1rem;
+}
+  .Academic-Heading,
+  .FacultyMainLine,
+  .Counter,
+  .Scholership-H,
+  .Result-H {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .Academic-text,
+  .Counter,
+  .Scholership-D,
+  .Result-D {
+    font-size: 0.6rem;
+    padding: 2px;
   }
 }
 
-@media (min-width:801px)  {
-  .footer-content {
-    padding-bottom: 60px;
-  }
-}
 
-@media (min-width:1025px) { 
-  .footer-content {
-    padding-bottom: 60px; 
-  }
-}
-
-@media (min-width:1281px) {
-  .footer-content {
-    padding-bottom: 60px; 
-  }
-}
-
-@media (min-width: 760px) {
-  .footer-wave-svg {
-    height: 50px;
-  }
-
-  .footer-content-column {
-    width: 24.99%;
-  }
-}
-
-
-
-
-
-
-
-                                         /*Pages CSS*/
+ 
+                                        /*Pages CSS*/
 
 
 
@@ -1001,7 +1327,7 @@ h1 {
 
 .LinkMain  {
  display: flex;
- align-items: start;
+ align-items: center;
  justify-content: space-around;
 }
 
@@ -1104,4 +1430,4 @@ h1 {
 .Result-D {
   font-size: 1rem;
   text-align: center;
-}
+} 

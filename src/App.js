@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route,  } from "react-router-dom";
 import { Suspense, lazy } from "react";
 
 import Navbar from './comps/Navbar';
@@ -33,8 +33,8 @@ function HomePageComponents() {
 }
 
 function App() {
-  const location = useLocation();
-  const isHomePage = location.pathname === "/";
+  
+ 
 
   return (
     <>
