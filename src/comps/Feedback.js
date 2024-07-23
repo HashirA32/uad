@@ -4,23 +4,23 @@ import React from 'react';
 function App() {
   const feedbacks = [
     {
-      name: "Guy Hawkins",
-      feedback: "At Present, There Are Five Departments Within The Faculty: Department Of Geography And Environment."
+      name: "Farhan Ahmad",
+      feedback: "Great professors, but campus facilities need improvement."
     },
     {
-      name: "Wade Warren",
-      feedback: "At Present, There Are Five Departments Within The Faculty: Department Of Geography And Environment."
+      name: "Ehsan Baloach",
+      feedback: "Disappointing resources and poor communication from admin."
     },
     {
-      name: "Guy Hawkins",
-      feedback: "At Present, There Are Five Departments Within The Faculty: Department Of Geography And Environment."
+      name: "Alina Ali",
+      feedback: "Great community, but the registration process is a hassle."
     },
   ];
 
   return (
     <div className="App">
       <div className="feedback-container">
-        <h1>Students Feedback</h1>
+        <h1>Students <br />Feedback</h1>
         <div className="feedback-grid">
           {feedbacks.map((item, index) => (
             <div key={index} className="feedback-card">

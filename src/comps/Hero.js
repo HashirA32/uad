@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="hero">
       
       <div className="hero-text">
-       Join the <Link to="/" className='hero-text-Link' >UAD</Link> Community, where passion ignites purpose.
+       Join the <Link to="/" className='hero-text-Link' >UAD</Link> Community, where passion <br/>ignites purpose.
        </div>
        <div className="name">
        <a className='hero-text-Link' href='/'>University of  Agriculture<br/>Dera Ismail Khan </a>
