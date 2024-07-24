@@ -6,7 +6,6 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #008f2d;
   background: linear-gradient(to right, #58ad57da 0%, #81b9188c 30%, #81b9188c 100%), url('/images/Background.jpg');
   background-repeat: no-repeat;
   height: 11vh;
@@ -56,13 +55,17 @@ img {
   height: fit-content;
   width: fit-content;
   margin-left: 5dvw;
-  margin-top: 40dvh;
-  padding: 1.5rem;
+  margin-top: 55dvh;
+  padding: 0.5rem;
+  padding-bottom: 1rem;
   font-weight: 600;
   font-size: 3.5rem;
   background: linear-gradient(to right, #0b3223ef, #0b3223a6, #045e3be3);
   border-radius: 5px;
-  color: rgba(163, 255, 163, 0.753);
+  /* color: rgb(0, 95, 0); */
+
+
+  
 }
 
 .hero-text {
@@ -81,11 +84,42 @@ img {
 }
 
 .hero-text-Link {
-  font-size: 3rem;
-  color: rgba(163, 255, 163, 0.753);
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #0d272b;
+  font-weight: 700;
   margin: 0px;
   padding: 0px;
+  position: relative;
+  -webkit-text-stroke: 0.1rem rgba(163, 255, 163, 0.753); 
 }
+
+
+.hero-text-Link::before {
+  content: attr(data-text);
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: rgba(163, 255, 163, 0.753);
+  -webkit-text-stroke: 0.1rem #0d272b;
+  border-right: 2px solid rgba(163, 255, 163, 0.753);
+  overflow: hidden;
+  animation: A-Text 6s linear infinite;
+}
+
+
+@keyframes A-Text {
+  0%,10%,100% {
+    width: 0%;
+  }
+  70%,90% {
+    width: 100%;
+  }
+}
+
 
 /* Card section */
 
@@ -94,14 +128,14 @@ img {
   background-size: cover;
   width: 21rem;
   height: 14rem;
-  background-color: #f8f8f813;
+  background-color: #35323217;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   perspective: 1000px;
-  box-shadow: 0 0 0 5px #3a3a3a2c;
+  box-shadow: 0 0 0 5px #4e4c4c31;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   margin: 0px;
   padding: 0px;
@@ -122,7 +156,6 @@ img {
   overflow: auto;
   height: 32dvh;
   width: 90dvw;
-  background-color: rgba(0, 0, 0, 0);
 }
 
 .cards-Contianer::-webkit-scrollbar {
@@ -157,7 +190,7 @@ img {
   height: 100%;
   padding: 20px;
   box-sizing: border-box;
-  background-color: #f2f2f2;
+  background-color: #f2f2f200;
   transform: rotateX(-90deg);
   transform-origin: bottom;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -194,18 +227,18 @@ img {
 }
 
 .ACADEMICMain {
+  
   margin: 0px;
   padding: 0px;
-  height: 100dvh;
   width: auto;
-  background-color: #21742f;
 }
 
 .ACADEMIC {
   margin: 0px;
   padding: 0px;
-  margin-left: 5dvw;
+  height: 100dvh;
   padding-top: 1rem;
+  background-color: #114e3c;
 }
 
 .Academic-Heading {
@@ -217,6 +250,7 @@ img {
   font-size: 3rem;
   background: linear-gradient(to right, #4e9ce67c 0%, #a3c4e27c 40%, #0d2b1900 100%);
   width: fit-content;
+  
 }
 
 .Academic-text {
@@ -234,7 +268,8 @@ img {
 .Faculty {
   height: 180dvh;
   width: auto;
-  background-color: #0f6424d7;
+  background-color: #22577aa9;
+  margin: 0px;
 }
 
 .FacultyHeading {
@@ -341,8 +376,8 @@ img {
 
 .App {
   text-align: center;
-  background-color: #092b1662;
-  color: #fff;
+  background-color: #35795b; 
+   color: #fff;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -367,11 +402,11 @@ img {
 }
 
 .feedback-card {
-  background-color: #c3ffcb1c;
+  background-color: #27292821;
   color: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 18px rgba(101, 160, 132, 0.63);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -401,7 +436,7 @@ img {
   justify-content: flex-end;
   flex-wrap: wrap;
   gap: 2rem;
-  background-color: #103b1d;
+  background-color: #61a771;
 }
 
 .EventHeading {
@@ -409,14 +444,14 @@ img {
   font-size: 1rem;
   padding-left: 2rem;
   font-weight: 600;
-  color: #bddbd2;
+  color: #1a2723;
 }
 
 .card {
   width: 350px;
   height: 200px;
   border-radius: 15px;
-  background: rgba(255, 255, 255, 0.075);
+  background: rgba(9, 41, 16, 0.342);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,7 +475,7 @@ img {
   -webkit-transition: all .8s ease;
   transition: all .8s ease;
   -webkit-filter: blur(.5rem);
-  filter: blur(.5rem);
+  filter: blur(.2rem);
 }
 
 .text {
@@ -455,7 +490,7 @@ img {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  color: rgb(255, 255, 255);
+  color: #1a2723;
   font-weight: 900;
   font-size: 1.1rem;
 }
@@ -463,7 +498,7 @@ img {
 .subtitle {
   font-size: 0.9rem;
   font-weight: 300;
-  color: rgba(240, 248, 255, 0.691);
+  color: #1a2723;
 }
 
 .card:hover::before {
@@ -488,8 +523,8 @@ h1 {
 } */
 
 .footer {
-  background-color: #132e1b;
-  color: #ffffff;
+  background-color: #142c31c9;
+  color: #050000;
 }
 
 .footer-wave-svg {
@@ -502,7 +537,7 @@ h1 {
 }
 
 .footer-wave-path {
-  fill: #b3db69;
+  fill: #35795b;
 }
 
 .footer-content {
@@ -522,7 +557,7 @@ h1 {
 }
 
 .footer-content-column ul li a {
-  color: #5bb34f;
+  color: #9ad692;
   text-decoration: none;
   font-size: 0.8rem;
 }
@@ -537,7 +572,7 @@ h1 {
 }
 
 .footer-menu-name {
-  color: #dfdf84;
+  color: #7a8b49;
   font-size: 1rem;
   font-weight: 900;
   letter-spacing: .1em;
@@ -559,14 +594,14 @@ h1 {
 }
 
 .footer-call-to-action-description {
-  color: #5bb34f;
+  color: #9ad692;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
 .footer-call-to-action-button:hover {
-  background-color: #7ba518;
-  color: #1f3d1b;
+  background-color: #12533a;
+  color: #9ad692;
 }
 
 .button:last-of-type {
@@ -574,9 +609,9 @@ h1 {
 }
 
 .footer-call-to-action-button {
-  background-color: #2bf1072a;
+  background-color: #9ad692;
   border-radius: 21px;
-  color: #7ba518;
+  color: #17521c;
   display: inline-block;
   font-size: 0.7rem;
   font-weight: 900;
@@ -596,7 +631,7 @@ h1 {
 }
 
 .footer-call-to-action-title {
-  color: #dfdf84;
+  color: #9bb857;
   font-size: 0.8rem;
   font-weight: 900;
   letter-spacing: .1em;
@@ -614,7 +649,7 @@ h1 {
 }
 
 .footer-call-to-action-link-wrapper a {
-  color: #7ba518;
+  color: #9ad692;
   text-decoration: none;
 }
 
@@ -626,15 +661,7 @@ h1 {
   width: 236px;
 }
 
-.footer-social-amoeba-path {
-  fill: #5bb34f;
-}
 
-.footer-social-link {
-  display: block;
-  padding: 10px;
-  position: absolute;
-}
 
 .hidden-link-text {
   position: absolute;
@@ -651,8 +678,8 @@ h1 {
 }
 
 .footer-copyright {
-  background-color: #5bb34f;
-  color: #051f0a;
+  background-color: #142c3142;
+  color: #6ca177;
   padding: 15px 30px;
   text-align: center;
 }
@@ -664,7 +691,7 @@ h1 {
 }
 
 .footer-copyright-text {
-  color: #051f0a;
+  color: #6ca177;
   font-size: 0.8rem;
   font-weight: 400;
   line-height: 18px;
@@ -673,7 +700,7 @@ h1 {
 }
 
 .footer-copyright-link {
-  color: #051f0a;
+  color: #6ca177;
   text-decoration: none;
 }
 
@@ -815,8 +842,16 @@ h1 {
 }
 
 @media (max-width: 768px) {
+  
+  body {
+    min-width: 500px;
+  }
   .Nav {
     flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
   }
 
   .logo {
@@ -952,8 +987,16 @@ h1 {
 }
 
 @media (max-width: 480px) {
+  
+  body {
+    min-width: 410px;
+  }
   .Nav {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
   
   }
 
@@ -962,20 +1005,19 @@ h1 {
     width: 15dvw;
   }
   .hero {
-    height: auto;
+    height: 41dvh;
+    width: auto;
     padding: 5px;
     font-size: 2rem;
   }
 
   .hero-text-Link {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
 
   .name {
     font-size: 1.2rem;
-    top: auto;
-    margin-top: 4rem;
-    bottom: -5px;
+    margin-top: 20dvh;
     padding: 0.5rem;
   }
 
@@ -1118,7 +1160,7 @@ h1 {
   font-weight: 600;
   text-align: center;
   padding-top: 2rem;
-  color: #0c3d1c;
+  
   
 }
 
@@ -1390,13 +1432,12 @@ h1 {
 /* Faculties Section */
 
 
-.ACADEMICMain {
-  
+.ACADEMIC-M {
   margin: 0px;
   padding: 0px;
-  height: 100dvh;
+  height: 180dvh;
   width: auto;
-  background-color: #21742f;
+  
 }
 
 .cards-C {
@@ -1408,9 +1449,8 @@ h1 {
   margin: 0px;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  height:fit-content;
+  height: fit-content;
   width: 90dvw;
-  background-color: rgba(0, 0, 0, 0);
 }
 
 

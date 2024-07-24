@@ -62,16 +62,6 @@ const Acadamic = () => {
           </div>
         </div>
 
-
-
-
-
-
-
-
-
-
-
         <div className="card">
           <img src="./images/Zoology.jpg" alt="Card" className="card__image" />
           <div className="card__content">
@@ -96,12 +86,8 @@ const Acadamic = () => {
           </div>
         </div>
 
-
-
-
-
-        </div>
-      </div> 
+          </div>
+        </div> 
       </div>    
     </>
   )

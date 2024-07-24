@@ -39,7 +39,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <Suspense fallback={<div>Loading data...</div>}>
+      <Suspense fallback={<div class="loader">
+   <div data-glitch="Loading..." class="glitch">Loading...</div>
+</div>}>
         <Routes>
           <Route path="/" element={<HomePageComponents />} />
           <Route path="/about" element={<About />} />

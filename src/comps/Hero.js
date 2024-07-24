@@ -7,10 +7,10 @@ const Hero = () => {
       <div className="hero">
       
       <div className="hero-text">
-       Join the <Link to="/" className='hero-text-Link' >UAD</Link> Community, where passion <br/>ignites purpose.
+       Join the <Link to="/" className='hero-text-Link' data-text="UAD" >UAD</Link> Community, where passion <br/>ignites purpose.
        </div>
        <div className="name">
-       <a className='hero-text-Link' href='/'>University of  Agriculture<br/>Dera Ismail Khan </a>
+       <a className='hero-text-Link' data-text="University of Agriculture  Dera Ismail Khan " href='/'>University of  Agriculture Dera Ismail Khan </a>
        </div> 
       </div>
     </>

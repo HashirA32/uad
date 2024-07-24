@@ -3,10 +3,11 @@ import React from 'react'
 const Events = () => {
   return (
     <>
-      <div className='Event'>
+        <div className='Event'>
         <div className='EventHeading'>
             Events
         </div>
+        <div  className='cards-Contianer'>
         <div className="card">
             <div className="text">
                 <span>PAKISTAN VETERINARY MEDICAL COUNCIL (PVMC) VISIT AT UAD</span>
@@ -43,7 +44,7 @@ const Events = () => {
             </div>  
         </div>
     </div>
-
+    </div>
 
     
 
