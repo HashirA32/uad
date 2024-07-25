@@ -20,6 +20,14 @@ const Scholerships = lazy(() => import('./pages/Scholerships'));
 const Links = lazy(() => import('./pages/Links'));
 const Contact = lazy(() => import('./pages/Contact'));
 
+
+
+
+
+
+
+ 
+
 function HomePageComponents() {
   return (
     <>
@@ -39,7 +47,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <Suspense fallback={<div>Loading data...</div>}>
+      <Suspense fallback={<div class="loader">
+   <div data-glitch="Loading..." class="glitch">Loading...</div>
+</div>}>
         <Routes>
           <Route path="/" element={<HomePageComponents />} />
           <Route path="/about" element={<About />} />
@@ -62,3 +72,11 @@ export default function AppWrapper() {
     </Router>
   );
 }
+
+
+
+ 
+
+
+
+

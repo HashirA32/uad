@@ -1,11 +1,39 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 const Contact = () => {
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
+    });
+
+    const sections = document.querySelectorAll('.LinkMain');
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    // Cleanup observer on component unmount
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
+
+
+
   return (
     <>
       <div className="LinkMain">
     <div className="Map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6786.059464944986!2d70.8391146!3d31.742389399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3926731f5e986243%3A0x19aacc9d532ef860!2sAgriculture%20University%2C%20D.I.Khan.!5e0!3m2!1sen!2s!4v1721566730317!5m2!1sen!2s"
+    <iframe className='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6786.059464944986!2d70.8391146!3d31.742389399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3926731f5e986243%3A0x19aacc9d532ef860!2sAgriculture%20University%2C%20D.I.Khan.!5e0!3m2!1sen!2s!4v1721566730317!5m2!1sen!2s"
      width="500" height="400" title='Map' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
      <div className="address">
