@@ -1,6 +1,35 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 const Faculty = () => {
+
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
+    });
+
+    const sections = document.querySelectorAll('.Faculty');
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    // Cleanup observer on component unmount
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
+
+
+
   return (
     <>
     <div className="Faculty">
@@ -19,7 +48,7 @@ const Faculty = () => {
         </div>
         <div className='FacultyDetails'>
           <p className="Faculty__title">Faculty of <br/> Computer Science</p>
-          <p className="Faculty__description">Explore BS in Computer Science at Agriculture University of Dera Ismail Khan (UAD). Gain programming and IT expertise for tech careers. Discover modern facilities and experienced faculty.</p>
+          <p className="Faculty__description">Explore BS in Computer Science at Agriculture University of Dera Ismail Khan (UAD). </p>
         </div>
       </div>
       
@@ -27,7 +56,7 @@ const Faculty = () => {
         
         <div className='FacultyDetails'>
           <p className="Faculty__title">Faculty of <br/> Agriculture</p>
-          <p className="Faculty__description">Explore BS in Agriculture at Agriculture University of Dera Ismail Khan (UAD). Gain expertise in agricultural sciences and sustainable farming, with modern facilities and experienced faculty.</p>
+          <p className="Faculty__description">Explore BS in Agriculture at Agriculture University of Dera Ismail Khan (UAD). </p>
         </div>
         <div className='FacultyImage'>
           <img  className='FacultyImage1' src="./images/AG1.png" alt="img" />

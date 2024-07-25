@@ -1,16 +1,20 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <>
        <div className="Nav">
-          <a href='/'>About</a>
-          <a href='/'>Admissions</a>
-          <a href='/'>Faculties</a>
-          <div className='logo'></div>
-          <a href='/'>Scholerships</a>
-          <a href='/'>Contact</a>
-          <a href='/'>Links</a>
+          <Link to="/About">About</Link>
+          <Link to="/Admission">Admissions</Link>
+          <Link to="/Faculties">Faculties</Link>
+          <Link to="/">
+          <div className='logo'>
+            <img src="./images/UAD_Logo.png" alt="" />
+            </div>
+          </Link>
+          <Link to="/Scholerships">Scholerships</Link>
+          <Link to="/Contact">Contact</Link>
+          <Link to="/Links">Results</Link>
           
        </div>
        

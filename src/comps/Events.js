@@ -1,12 +1,41 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 const Events = () => {
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show');
+            } else {
+              entry.target.classList.remove('show');
+            }
+          });
+        });
+    
+        const sections = document.querySelectorAll('.Event');
+    
+        sections.forEach((section) => {
+          observer.observe(section);
+        });
+    
+        // Cleanup observer on component unmount
+        return () => {
+          sections.forEach((section) => {
+            observer.unobserve(section);
+          });
+        };
+      }, []);
+
+      
+
   return (
     <>
-      <div className='Event'>
+        <div className='Event'>
         <div className='EventHeading'>
             Events
         </div>
+        <div  className='cards-Contianer'>
         <div className="card">
             <div className="text">
                 <span>PAKISTAN VETERINARY MEDICAL COUNCIL (PVMC) VISIT AT UAD</span>
@@ -43,7 +72,7 @@ const Events = () => {
             </div>  
         </div>
     </div>
-
+    </div>
 
     
 
