@@ -20,6 +20,14 @@ const Scholerships = lazy(() => import('./pages/Scholerships'));
 const Links = lazy(() => import('./pages/Links'));
 const Contact = lazy(() => import('./pages/Contact'));
 
+
+
+
+
+
+
+ 
+
 function HomePageComponents() {
   return (
     <>
@@ -64,3 +72,11 @@ export default function AppWrapper() {
     </Router>
   );
 }
+
+
+
+ 
+
+
+
+

@@ -1,6 +1,34 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 const Admission = () => {
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        } else {
+          entry.target.classList.remove('show');
+        }
+      });
+    });
+
+    const sections = document.querySelectorAll('.FormMain');
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    // Cleanup observer on component unmount
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
+
+
+
   return (
     <>
       <div className='FormMain'>
