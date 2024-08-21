@@ -795,7 +795,7 @@ h1 {
 
 
 
-/* Admmision Form */
+/* Admission Form */
 /* General Styles */
 .FormMain {
   opacity: 0;
@@ -888,7 +888,7 @@ h1 {
   outline: 0;
   border: 1px solid rgba(105, 105, 105, 0.397);
   border-radius: 10px;
-  width: 100%;
+  width: 90%;
 }
 
 .form label .input + span {
@@ -922,7 +922,7 @@ h1 {
   outline: 0;
   border: 1px solid rgba(105, 105, 105, 0.397);
   border-radius: 10px;
-  width: 100%;
+  width: 50%;
 }
 
 .select1 option {
@@ -1230,18 +1230,37 @@ h1 {
 
   .name {
     top: auto;
-    bottom: -25px;
-    padding: 0.5rem;
+    bottom: 200px;
+    padding-top: 0.5rem;
    
   }
 
   .hero-text {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .hero-text-Link {
-    font-size:  2rem;
+    font-size:  1.6rem;
+    color: transparent;
   }
+
+  
+  .hero-text-Link::before {
+    content: attr(data-text);
+    font-size: 1.6rem;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: rgba(135, 196, 190, 0.877);
+    -webkit-text-stroke: 0.1rem rgba(19, 150, 108, 0.747);
+    border-right: 2px solid rgba(118, 190, 118, 0.753);
+    overflow: hidden;
+    animation: A-Text 6s linear infinite;
+  }
+  
 
 
 
@@ -1515,7 +1534,8 @@ h1 {
 @media (max-width: 480px) {
   
   body {
-    min-width: 410px;
+    min-width: 400px;
+    font-size: 1rem;
   }
   .Nav {
     display: flex;
@@ -1523,6 +1543,7 @@ h1 {
     align-items: center;
     justify-content: center;
     width: auto;
+    height: 40dvh;
   
   }
 
@@ -1539,13 +1560,14 @@ h1 {
 
   .hero-text-Link {
     font-size: 0.8rem;
+    font-weight: 100;
   }
 
   
   .hero-text-Link::before {
     content: attr(data-text);
     font-size: 0.8rem;
-    
+    font-weight: 300;
     position: absolute;
     top: 0;
     left: 0;
@@ -1585,7 +1607,10 @@ h1 {
     height: 11.5rem;
     background-color: transparent;
   }
-  .ACADEMICMain,
+  .ACADEMICMain{
+    margin: 0px;
+    padding: 0px;
+  }
   .CounterMain,
   .App,
   .Event,
